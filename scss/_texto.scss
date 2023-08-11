@@ -1,0 +1,60 @@
+.contenido-zapas h2 {
+
+    padding: 80px;
+    color: #12ECC4 ;
+    font-size: 1.8rem; 
+   }
+   h2 span { 
+    font-size: 1.4rem;
+}
+.catalogo p {
+    font-family: $font-secundaria; 
+    font-weight: 600;
+    padding-left: 10px;
+   }
+   .catalogo a { 
+   color: #fff;
+   background-color: #701065;
+    text-decoration: none;
+   font-weight: 600;
+   padding: 3px 5px;
+   border-radius: 10px;
+   align-self: flex-end;
+   margin-right: 10px;
+}
+.catalogo a:hover {
+color: #fff;
+text-decoration: none;
+transform: translateY(-5%);
+}
+ 
+        
+.titulo-nosotros h1 {
+     font-family: $font-secundaria; 
+     font-weight: 800;
+     text-align: center;
+      
+    }
+    .titulo-nosotros h2 {
+       color: #701065;
+       font-family: $font-secundaria; 
+     font-weight: 600;
+    }
+    .titulo-nosotros p {
+     display: block;
+     font-family: $font-secundaria;
+     font-weight: 600;
+ }
+ .titulo-section {
+    font-weight: 800;
+  font-size: 30px;
+  padding: 15px 0;
+  text-align: center;
+   }
+   .form-container h1 {
+    color: #701065;
+   }
+   .form-container p {
+    font-family: $font-secundaria;
+    font-weight: 600;
+   }

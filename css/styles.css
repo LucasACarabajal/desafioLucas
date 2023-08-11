@@ -1,10 +1,66 @@
-@charset "UTF-8";
+/*pag principal*/
+.logo img {
+  width: 200px;
+}
+
+.zapas {
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img {
+  padding: 1%;
+  width: 51vw;
+  left: 25%;
+}
+
+/*footer*/
+.icon {
+  height: 30px;
+  width: 50px;
+  color: #fff;
+}
+
+/*catalogo*/
+.img-catalogo {
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+}
+
+/*nosotros*/
+.nosotros img {
+  padding: 15px;
+}
+
 body {
   font-family: "Righteous" cursive;
   font-weight: 800;
 }
 
-/* nav-principal */
+footer {
+  display: grid;
+  background-color: black;
+  flex-direction: column;
+  padding-top: 10px;
+}
+footer .redes {
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+
+/*pag principal*/
+.logo {
+  text-align: center;
+}
+
+/*barra de navegacion*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -26,124 +82,6 @@ body {
   text-decoration-color: #701065;
 }
 
-/* img principal */
-.zapas {
-  background-image: url(../img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 450px;
-  position: relative;
-  width: 100%;
-}
-
-.contenido-zapas {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenido-zapas h2 {
-  padding: 80px;
-  color: #12ECC4;
-  font-size: 1.8rem;
-}
-
-.contenido-zapas div {
-  color: #12ECC4;
-  font-size: 1.5rem;
-  right: 20%;
-}
-
-h2 span {
-  font-size: 1.4rem;
-}
-
-/* pagina principal */
-/* diseño de imagenes-letras catalogo*/
-.logo {
-  text-align: center;
-}
-
-.imagen {
-  padding: 15px 10px;
-  border-radius: 40px;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
-}
-
-/* diseño de tarjetas */
-.card {
-  display: flex;
-  padding-top: 1rem;
-  font-size: small;
-  padding: 1rem;
-  width: 300px;
-  border-radius: 40px;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
-}
-
-.card-segunda {
-  left: 50px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: small;
-  padding: 1.5rem;
-  width: 300px;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
-}
-
-.col-una {
-  padding: 5px;
-}
-
-.col-dos {
-  align-items: center;
-  padding: 30px;
-  margin: 20px;
-}
-
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .img-carusel {
-    width: 50%;
-    margin: auto;
-  }
-  .img-carusel .card, .img-carusel .card-segunda {
-    display: grid;
-  }
-}
-.img-carusel {
-  padding: 3rem;
-  left: 25%;
-  width: 55%;
-}
-
-footer {
-  display: grid;
-  background-color: black;
-  flex-direction: column;
-  padding-top: 10px;
-}
-footer .redes {
-  text-align: center;
-}
-footer p {
-  color: aliceblue;
-}
-footer .icon {
-  height: 30px;
-  width: 50px;
-  color: aliceblue;
-}
-
 /*catalogo*/
 .catalogo {
   display: grid;
@@ -159,74 +97,31 @@ footer .icon {
   padding: 16px;
 }
 
-.img-catalogo {
-  border-radius: 20px;
-  height: 250px;
-  width: 250px;
+.contenido-zapas {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.catalogo p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-left: 10px;
-}
-
-.catalogo a {
-  color: #fff;
-  background-color: #701065;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 3px 5px;
-  border-radius: 10px;
-  align-self: flex-end;
-  margin-right: 10px;
-}
-
-.catalogo a:hover {
+.contenido-zapas div {
   color: #12ECC4;
-  text-decoration: none;
+  font-size: 1.5rem;
+  right: 20%;
 }
 
+/*nosotros*/
 .nosotros {
   text-align: center;
 }
 
-.titulo-nosotros h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  text-align: center;
-}
-.titulo-nosotros h3 {
-  color: #701065;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-.titulo-nosotros p {
-  display: block;
-}
-.titulo-nosotros img {
-  width: 530px;
-  height: 300px;
-}
-
+/*contacto*/
 .contacto {
   display: flex;
-}
-
-.titulo-section {
-  font-weight: 800;
-  font-size: 30px;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.form-container h1 {
-  color: #701065;
-}
-
-.form-container p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
 
 .contacto .form-container {
@@ -251,6 +146,99 @@ footer .icon {
   color: #fff;
   background-color: #701065;
   border-radius: 10px;
+}
+
+.contenido-zapas h2 {
+  padding: 80px;
+  color: #12ECC4;
+  font-size: 1.8rem;
+}
+
+h2 span {
+  font-size: 1.4rem;
+}
+
+.catalogo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.catalogo a {
+  color: #fff;
+  background-color: #701065;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 3px 5px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.catalogo a:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-5%);
+}
+
+.titulo-nosotros h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.titulo-nosotros h2 {
+  color: #701065;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.titulo-nosotros p {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.titulo-section {
+  font-weight: 800;
+  font-size: 30px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.form-container h1 {
+  color: #701065;
+}
+
+.form-container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalogo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .nosotros img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catalogo {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav {
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

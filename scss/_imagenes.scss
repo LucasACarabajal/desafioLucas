@@ -1,0 +1,34 @@
+/*pag principal*/
+.logo img {
+    width: 200px;
+   }
+   .zapas {
+    background-image: url(../img/fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 450px;
+      position: relative;
+      width: 100%;
+  }
+.carousel-img {
+    padding: 1%;
+    width: 51vw;
+    left: 25%;
+   }
+   /*footer*/
+   .icon {
+    height: 30px;
+    width: 50px;
+    color: #fff;
+   }
+   /*catalogo*/
+   .img-catalogo {
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+   }
+
+   /*nosotros*/
+   .nosotros img {
+    padding: 15px;
+   }
